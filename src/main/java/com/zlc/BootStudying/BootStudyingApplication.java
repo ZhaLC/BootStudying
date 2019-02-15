@@ -1,6 +1,7 @@
 package com.zlc.BootStudying;
 
 import com.zlc.BootStudying.config.ConfigBean;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-@RestController
+//@RestController
 @SpringBootApplication
-@EnableConfigurationProperties({ConfigBean.class})
+//@EnableConfigurationProperties({ConfigBean.class})
+@MapperScan("com.zlc.BootStudying.dao.*")
 public class BootStudyingApplication {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
@@ -26,11 +28,11 @@ public class BootStudyingApplication {
 		return configBean.getName();
 	}*/
 
-	@RequestMapping("/aa")
+	/*@RequestMapping("/aa")
 	public ModelAndView index(){
 		ModelAndView modelAndView = new ModelAndView("/index");
 		return modelAndView;
-	}
+	}*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(BootStudyingApplication.class, args);

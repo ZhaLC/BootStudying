@@ -1,4 +1,4 @@
-package com.zlc.BootStudying.config;
+/*package com.zlc.BootStudying.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -15,13 +15,14 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 
-import java.lang.reflect.Method;
+import java.lang.reflect.Method;*/
 
 /**
  * @author : ZLC
  * @create : 2019-02-14 16:09
  * @desc : Redis缓存的配置类
  **/
+/*
 @Configuration
 @EnableCaching
 public class RedisConfig extends CachingConfigurerSupport{
@@ -66,3 +67,4 @@ public class RedisConfig extends CachingConfigurerSupport{
     }
 
 }
+*/

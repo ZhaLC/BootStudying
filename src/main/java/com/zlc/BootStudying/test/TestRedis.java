@@ -1,3 +1,4 @@
+/*
 package com.zlc.BootStudying.test;
 
 import com.zlc.BootStudying.po.User;
@@ -6,22 +7,22 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.concurrent.TimeUnit;
+*/
 
 /**
  * @author : ZLC
  * @create : 2019-02-14 16:56
  * @desc : 测试Redis缓存
  **/
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(Application.class)
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@SpringApplicationConfiguration(Application.class)
+/*
 public class TestRedis {
 
     @Autowired
@@ -54,3 +55,4 @@ public class TestRedis {
     }
 
 }
+*/

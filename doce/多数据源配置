@@ -1,0 +1,7 @@
+https://www.cnblogs.com/ityouknow/p/6102399.html
+springBoot + mybatis 多数据源配置
+
+主要是类: com.zlc.BootStudying.config.DataSourceConfig
+
+一层一层注入,先创建DataSource，在创建SqlSessionFactory在创建事务，
+最后包装到SqlSessionTemplate中。其中需要制定分库的mapper文件地址，以及分库到层代码
