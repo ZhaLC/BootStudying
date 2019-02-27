@@ -26,6 +26,14 @@
 
 	<dependencies>
 
+		<!--整合kafka -->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+			<version>1.0.6.RELEASE</version>
+		</dependency>
+
+
 		<!--整合RabbitMQ-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
