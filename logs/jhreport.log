@@ -1,0 +1,86 @@
+[2018-11-16 10:54:52.049][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 10868 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2018-11-16 10:54:52.055][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2018-11-16 10:54:52.142][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@358ee631: startup date [Fri Nov 16 10:54:52 CST 2018]; root of context hierarchy
+[2018-11-16 10:54:52.458][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2018-11-16 10:54:53.704][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8080 (http)
+[2018-11-16 10:54:53.719][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2018-11-16 10:54:53.720][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2018-11-16 10:54:53.878][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2018-11-16 10:54:53.879][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 1737 ms
+[2018-11-16 10:54:54.048][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2018-11-16 10:54:54.054][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-11-16 10:54:54.055][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-11-16 10:54:54.055][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-11-16 10:54:54.055][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-11-16 10:54:54.447][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@358ee631: startup date [Fri Nov 16 10:54:52 CST 2018]; root of context hierarchy
+[2018-11-16 10:54:54.506][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/index]}" onto public java.lang.String com.zlc.BootStudying.BootStudyingApplication.index()
+[2018-11-16 10:54:54.508][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/testConfigBean]}" onto public java.lang.String com.zlc.BootStudying.controller.TestController.testConfigBean()
+[2018-11-16 10:54:54.514][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-11-16 10:54:54.515][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-11-16 10:54:54.546][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-11-16 10:54:54.546][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-11-16 10:54:54.586][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-11-16 10:54:54.731][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2018-11-16 10:54:54.747][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8080"]
+[2018-11-16 10:54:54.756][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8080"]
+[2018-11-16 10:54:54.777][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2018-11-16 10:54:54.809][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8080 (http)
+[2018-11-16 10:54:54.814][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 3.712 seconds (JVM running for 5.365)
+[2018-11-16 10:55:02.079][http-nio-8080-exec-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-11-16 10:55:02.080][http-nio-8080-exec-1][INFO ][org.springframework.web.servlet.DispatcherServlet:489]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-11-16 10:55:02.103][http-nio-8080-exec-1][INFO ][org.springframework.web.servlet.DispatcherServlet:508]-- FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+[2018-11-16 10:55:22.378][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 19008 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2018-11-16 10:55:22.387][main][DEBUG][com.zlc.BootStudying.BootStudyingApplication:51]-- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+[2018-11-16 10:55:22.388][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2018-11-16 10:55:22.543][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ec756bd: startup date [Fri Nov 16 10:55:22 CST 2018]; root of context hierarchy
+[2018-11-16 10:55:22.760][background-preinit][DEBUG][org.jboss.logging:160]-- Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+[2018-11-16 10:55:22.781][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2018-11-16 10:55:22.865][background-preinit][DEBUG][org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver:70]-- Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[2018-11-16 10:55:23.991][main][DEBUG][org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver:70]-- Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[2018-11-16 10:55:24.004][main][DEBUG][org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver:70]-- Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[2018-11-16 10:55:24.013][main][DEBUG][org.hibernate.validator.internal.engine.ConfigurationImpl:163]-- Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[2018-11-16 10:55:24.014][main][DEBUG][org.hibernate.validator.internal.engine.ConfigurationImpl:185]-- Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[2018-11-16 10:55:24.016][main][DEBUG][org.hibernate.validator.internal.engine.ConfigurationImpl:199]-- Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+[2018-11-16 10:55:24.018][main][DEBUG][org.hibernate.validator.internal.xml.ValidationXmlParser:99]-- Trying to load META-INF/validation.xml for XML based Validator configuration.
+[2018-11-16 10:55:24.020][main][DEBUG][org.hibernate.validator.internal.xml.ResourceLoaderHelper:47]-- Trying to load META-INF/validation.xml via user class loader
+[2018-11-16 10:55:24.021][main][DEBUG][org.hibernate.validator.internal.xml.ResourceLoaderHelper:54]-- Trying to load META-INF/validation.xml via TCCL
+[2018-11-16 10:55:24.024][main][DEBUG][org.hibernate.validator.internal.xml.ResourceLoaderHelper:60]-- Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[2018-11-16 10:55:24.025][main][DEBUG][org.hibernate.validator.internal.xml.ValidationXmlParser:106]-- No META-INF/validation.xml found. Using annotation based configuration only.
+[2018-11-16 10:55:24.379][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8080 (http)
+[2018-11-16 10:55:24.393][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2018-11-16 10:55:24.394][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2018-11-16 10:55:24.504][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2018-11-16 10:55:24.504][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 1961 ms
+[2018-11-16 10:55:24.700][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2018-11-16 10:55:24.705][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-11-16 10:55:24.706][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-11-16 10:55:24.706][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-11-16 10:55:24.706][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2018-11-16 10:55:24.894][main][DEBUG][org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver:70]-- Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[2018-11-16 10:55:24.901][main][DEBUG][org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver:70]-- Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[2018-11-16 10:55:24.902][main][DEBUG][org.hibernate.validator.internal.engine.ConfigurationImpl:163]-- Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[2018-11-16 10:55:24.902][main][DEBUG][org.hibernate.validator.internal.engine.ConfigurationImpl:185]-- Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[2018-11-16 10:55:24.903][main][DEBUG][org.hibernate.validator.internal.engine.ConfigurationImpl:199]-- Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy48
+[2018-11-16 10:55:24.903][main][DEBUG][org.hibernate.validator.internal.xml.ValidationXmlParser:99]-- Trying to load META-INF/validation.xml for XML based Validator configuration.
+[2018-11-16 10:55:24.903][main][DEBUG][org.hibernate.validator.internal.xml.ResourceLoaderHelper:47]-- Trying to load META-INF/validation.xml via user class loader
+[2018-11-16 10:55:24.904][main][DEBUG][org.hibernate.validator.internal.xml.ResourceLoaderHelper:54]-- Trying to load META-INF/validation.xml via TCCL
+[2018-11-16 10:55:24.904][main][DEBUG][org.hibernate.validator.internal.xml.ResourceLoaderHelper:60]-- Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[2018-11-16 10:55:24.905][main][DEBUG][org.hibernate.validator.internal.xml.ValidationXmlParser:106]-- No META-INF/validation.xml found. Using annotation based configuration only.
+[2018-11-16 10:55:25.071][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@ec756bd: startup date [Fri Nov 16 10:55:22 CST 2018]; root of context hierarchy
+[2018-11-16 10:55:25.136][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/index]}" onto public java.lang.String com.zlc.BootStudying.BootStudyingApplication.index()
+[2018-11-16 10:55:25.138][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/testConfigBean]}" onto public java.lang.String com.zlc.BootStudying.controller.TestController.testConfigBean()
+[2018-11-16 10:55:25.142][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-11-16 10:55:25.142][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-11-16 10:55:25.170][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-11-16 10:55:25.170][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-11-16 10:55:25.201][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-11-16 10:55:25.318][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2018-11-16 10:55:25.335][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8080"]
+[2018-11-16 10:55:25.343][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8080"]
+[2018-11-16 10:55:25.362][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2018-11-16 10:55:25.394][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8080 (http)
+[2018-11-16 10:55:25.401][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 3.638 seconds (JVM running for 4.969)
+[2018-11-16 10:55:30.404][http-nio-8080-exec-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-11-16 10:55:30.405][http-nio-8080-exec-1][INFO ][org.springframework.web.servlet.DispatcherServlet:489]-- FrameworkServlet 'dispatcherServlet': initialization started
+[2018-11-16 10:55:30.426][http-nio-8080-exec-1][INFO ][org.springframework.web.servlet.DispatcherServlet:508]-- FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+[2018-11-16 10:55:30.452][http-nio-8080-exec-1][DEBUG][com.zlc.BootStudying.BootStudyingApplication$$EnhancerBySpringCGLIB$$808992d:30]-- aaa

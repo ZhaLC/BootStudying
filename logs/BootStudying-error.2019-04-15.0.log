@@ -1,0 +1,2 @@
+[2019-04-15 17:49:00.174][pool-4-thread-1][ERROR][org.springframework.kafka.support.LoggingProducerListener:76]-- Exception thrown when sending a message with key='null' and payload='36885e82-b7ae-46b1-a7fd-9b55016b4a7f' to topic app_log:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.

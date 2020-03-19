@@ -1,0 +1,5 @@
+
+gsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(åº¦Óúÿÿÿÿ
+Fsquid:S1068"*Remove this unused "logger" private field.(…¸éÙüÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¤’Êû
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûè‰‰

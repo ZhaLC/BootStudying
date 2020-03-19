@@ -1,0 +1,837 @@
+[2019-03-01 09:32:18.336][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 13364 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2019-03-01 09:32:18.349][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2019-03-01 09:32:18.865][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2019-03-01 09:32:19.119][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f3f02ee: startup date [Fri Mar 01 09:32:19 CST 2019]; root of context hierarchy
+[2019-03-01 09:32:20.585][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test1Mapper' and 'com.zlc.BootStudying.dao.test1.Test1Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 09:32:20.585][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test2Mapper' and 'com.zlc.BootStudying.dao.test2.Test2Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 09:32:20.586][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.zlc.BootStudying.dao.*]' package. Please check your configuration.
+[2019-03-01 09:32:21.869][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$721d05cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 09:32:21.929][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7f635920] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 09:32:22.890][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8081 (http)
+[2019-03-01 09:32:22.909][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2019-03-01 09:32:22.911][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2019-03-01 09:32:26.222][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2019-03-01 09:32:26.222][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 7103 ms
+[2019-03-01 09:32:26.659][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2019-03-01 09:32:26.669][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2019-03-01 09:32:26.670][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2019-03-01 09:32:26.671][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2019-03-01 09:32:26.671][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2019-03-01 09:32:29.025][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f3f02ee: startup date [Fri Mar 01 09:32:19 CST 2019]; root of context hierarchy
+[2019-03-01 09:32:29.170][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/test/testDataSource]}" onto public void com.zlc.BootStudying.controller.TestController.testDataSource()
+[2019-03-01 09:32:29.175][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-03-01 09:32:29.176][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-03-01 09:32:29.300][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 09:32:29.301][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 09:32:29.410][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 09:32:31.461][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2019-03-01 09:32:31.530][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916]-- Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[2019-03-01 09:32:31.555][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678]-- Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[2019-03-01 09:32:31.999][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 0
+[2019-03-01 09:32:32.027][main][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig:165]-- ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = applog
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+
+[2019-03-01 09:32:32.110][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 09:32:32.110][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 09:32:32.120][main][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig:165]-- ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = applog
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+
+[2019-03-01 09:32:32.135][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 09:32:32.135][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 09:32:32.136][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 2147483647
+[2019-03-01 09:32:32.194][main][INFO ][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:267]-- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2019-03-01 09:32:32.214][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8081"]
+[2019-03-01 09:32:32.231][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8081"]
+[2019-03-01 09:32:32.234][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2019-03-01 09:32:32.386][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8081 (http)
+[2019-03-01 09:32:32.396][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 15.154 seconds (JVM running for 29.175)
+[2019-03-01 09:32:32.410][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[]
+[2019-03-01 09:32:32.438][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[]
+[2019-03-01 09:32:32.999][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[]
+[2019-03-01 09:32:33.003][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[app_log-0]
+[2019-03-01 09:33:00.022][pool-4-thread-1][INFO ][org.apache.kafka.clients.producer.ProducerConfig:165]-- ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+[2019-03-01 09:33:00.058][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 09:33:00.059][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 11:44:50.764][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 14620 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2019-03-01 11:44:50.862][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2019-03-01 11:44:57.049][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2019-03-01 11:45:00.942][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70f02c32: startup date [Fri Mar 01 11:45:00 CST 2019]; root of context hierarchy
+[2019-03-01 11:45:06.291][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test1Mapper' and 'com.zlc.BootStudying.dao.test1.Test1Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 11:45:06.292][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test2Mapper' and 'com.zlc.BootStudying.dao.test2.Test2Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 11:45:06.292][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.zlc.BootStudying.dao.*]' package. Please check your configuration.
+[2019-03-01 11:45:08.144][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$273c3ed9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 11:45:08.458][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$3482922e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 11:45:10.654][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8081 (http)
+[2019-03-01 11:45:10.680][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2019-03-01 11:45:10.681][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2019-03-01 11:45:13.642][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2019-03-01 11:45:13.642][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 12700 ms
+[2019-03-01 11:45:14.135][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2019-03-01 11:45:14.156][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2019-03-01 11:45:14.157][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2019-03-01 11:45:14.158][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2019-03-01 11:45:14.158][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2019-03-01 11:45:16.345][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70f02c32: startup date [Fri Mar 01 11:45:00 CST 2019]; root of context hierarchy
+[2019-03-01 11:45:16.512][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/test/testDataSource]}" onto public void com.zlc.BootStudying.controller.TestController.testDataSource()
+[2019-03-01 11:45:16.518][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-03-01 11:45:16.519][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-03-01 11:45:16.639][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 11:45:16.640][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 11:45:16.755][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 11:45:18.894][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2019-03-01 11:45:18.930][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916]-- Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[2019-03-01 11:45:18.935][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678]-- Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[2019-03-01 11:45:19.062][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 0
+[2019-03-01 11:45:19.402][main][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig:165]-- ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = applog
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+
+[2019-03-01 11:45:19.492][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 11:45:19.493][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 11:45:19.508][main][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig:165]-- ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = applog
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+
+[2019-03-01 11:45:19.514][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 11:45:19.515][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 11:45:19.516][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 2147483647
+[2019-03-01 11:45:19.535][main][INFO ][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:267]-- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2019-03-01 11:45:19.562][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8081"]
+[2019-03-01 11:45:19.581][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8081"]
+[2019-03-01 11:45:19.586][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2019-03-01 11:45:19.656][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8081 (http)
+[2019-03-01 11:45:19.668][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 31.94 seconds (JVM running for 50.91)
+[2019-03-01 11:45:19.820][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[]
+[2019-03-01 11:45:19.820][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[]
+[2019-03-01 11:45:20.044][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[app_log-0]
+[2019-03-01 11:45:20.044][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[]
+[2019-03-01 11:46:00.009][pool-4-thread-1][INFO ][org.apache.kafka.clients.producer.ProducerConfig:165]-- ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+[2019-03-01 11:46:00.072][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 11:46:00.072][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 11:49:53.233][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator:623]-- Attempt to heart beat failed since the group is rebalancing, try to re-join group.
+[2019-03-01 11:49:53.233][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator:623]-- Attempt to heart beat failed since the group is rebalancing, try to re-join group.
+[2019-03-01 11:49:53.233][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[]
+[2019-03-01 11:49:53.238][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[app_log-0]
+[2019-03-01 11:49:53.311][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[]
+[2019-03-01 11:49:53.311][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[app_log-0]
+[2019-03-01 11:54:31.552][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 21188 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2019-03-01 11:54:31.562][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2019-03-01 11:54:32.047][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2019-03-01 11:54:32.244][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca20101: startup date [Fri Mar 01 11:54:32 CST 2019]; root of context hierarchy
+[2019-03-01 11:54:32.932][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test1Mapper' and 'com.zlc.BootStudying.dao.test1.Test1Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 11:54:32.933][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test2Mapper' and 'com.zlc.BootStudying.dao.test2.Test2Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 11:54:32.933][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.zlc.BootStudying.dao.*]' package. Please check your configuration.
+[2019-03-01 11:54:33.568][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$6fb9d51f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 11:54:33.624][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7d002874] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 11:54:34.272][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8081 (http)
+[2019-03-01 11:54:34.283][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2019-03-01 11:54:34.285][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2019-03-01 11:54:34.417][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2019-03-01 11:54:34.417][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 2173 ms
+[2019-03-01 11:54:34.713][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2019-03-01 11:54:34.722][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2019-03-01 11:54:34.723][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2019-03-01 11:54:34.724][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2019-03-01 11:54:34.724][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2019-03-01 11:54:35.922][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca20101: startup date [Fri Mar 01 11:54:32 CST 2019]; root of context hierarchy
+[2019-03-01 11:54:36.052][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/test/testDataSource]}" onto public void com.zlc.BootStudying.controller.TestController.testDataSource()
+[2019-03-01 11:54:36.058][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-03-01 11:54:36.059][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-03-01 11:54:36.180][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 11:54:36.180][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 11:54:36.285][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 11:54:37.648][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2019-03-01 11:54:37.659][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916]-- Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[2019-03-01 11:54:37.667][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678]-- Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[2019-03-01 11:54:37.726][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 0
+[2019-03-01 11:54:37.749][main][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig:165]-- ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = applog
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+
+[2019-03-01 11:54:38.037][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 11:54:38.038][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 11:54:38.044][main][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig:165]-- ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = applog
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+
+[2019-03-01 11:54:38.051][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 11:54:38.052][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 11:54:38.053][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 2147483647
+[2019-03-01 11:54:38.069][main][INFO ][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:267]-- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2019-03-01 11:54:38.092][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8081"]
+[2019-03-01 11:54:38.110][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8081"]
+[2019-03-01 11:54:38.114][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2019-03-01 11:54:38.143][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8081 (http)
+[2019-03-01 11:54:38.151][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 7.82 seconds (JVM running for 9.649)
+[2019-03-01 11:54:38.201][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[]
+[2019-03-01 11:54:38.201][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:244]-- partitions revoked:[]
+[2019-03-01 11:54:44.383][org.springframework.kafka.KafkaListenerEndpointContainer#1-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[]
+[2019-03-01 11:54:44.383][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer:249]-- partitions assigned:[app_log-0]
+[2019-03-01 11:55:00.008][pool-4-thread-1][INFO ][org.apache.kafka.clients.producer.ProducerConfig:165]-- ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+[2019-03-01 11:55:00.029][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 11:55:00.030][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 12:27:50.278][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 18216 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2019-03-01 12:27:50.286][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2019-03-01 12:27:50.954][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2019-03-01 12:27:51.217][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca20101: startup date [Fri Mar 01 12:27:51 CST 2019]; root of context hierarchy
+[2019-03-01 12:27:52.427][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test1Mapper' and 'com.zlc.BootStudying.dao.test1.Test1Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 12:27:52.428][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test2Mapper' and 'com.zlc.BootStudying.dao.test2.Test2Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 12:27:52.429][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.zlc.BootStudying.dao.*]' package. Please check your configuration.
+[2019-03-01 12:27:53.332][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$ac1c298f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 12:27:53.408][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$b9627ce4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 12:27:54.481][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8081 (http)
+[2019-03-01 12:27:54.515][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2019-03-01 12:27:54.518][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2019-03-01 12:27:54.714][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2019-03-01 12:27:54.714][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 3497 ms
+[2019-03-01 12:27:55.094][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2019-03-01 12:27:55.102][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2019-03-01 12:27:55.103][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2019-03-01 12:27:55.103][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2019-03-01 12:27:55.103][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2019-03-01 12:27:56.444][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca20101: startup date [Fri Mar 01 12:27:51 CST 2019]; root of context hierarchy
+[2019-03-01 12:27:56.590][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/test/testDataSource]}" onto public void com.zlc.BootStudying.controller.TestController.testDataSource()
+[2019-03-01 12:27:56.596][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-03-01 12:27:56.598][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-03-01 12:27:56.743][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 12:27:56.743][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 12:27:56.884][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 12:27:58.873][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2019-03-01 12:27:58.885][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916]-- Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[2019-03-01 12:27:58.888][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678]-- Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[2019-03-01 12:27:58.917][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 2147483647
+[2019-03-01 12:27:58.927][main][INFO ][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:267]-- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2019-03-01 12:27:58.943][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8081"]
+[2019-03-01 12:27:58.963][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8081"]
+[2019-03-01 12:27:59.223][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2019-03-01 12:27:59.257][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8081 (http)
+[2019-03-01 12:27:59.266][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 10.4 seconds (JVM running for 12.144)
+[2019-03-01 12:28:00.024][pool-4-thread-1][INFO ][org.apache.kafka.clients.producer.ProducerConfig:165]-- ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+[2019-03-01 12:28:00.076][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 12:28:00.078][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 13:23:04.644][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 15960 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2019-03-01 13:23:04.652][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2019-03-01 13:23:05.298][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2019-03-01 13:23:05.397][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca20101: startup date [Fri Mar 01 13:23:05 CST 2019]; root of context hierarchy
+[2019-03-01 13:23:06.177][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test1Mapper' and 'com.zlc.BootStudying.dao.test1.Test1Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 13:23:06.178][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test2Mapper' and 'com.zlc.BootStudying.dao.test2.Test2Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 13:23:06.178][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.zlc.BootStudying.dao.*]' package. Please check your configuration.
+[2019-03-01 13:23:06.873][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$220b185b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 13:23:06.949][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$2f516bb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 13:23:07.888][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8081 (http)
+[2019-03-01 13:23:07.904][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2019-03-01 13:23:07.906][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2019-03-01 13:23:08.075][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2019-03-01 13:23:08.076][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 2680 ms
+[2019-03-01 13:23:08.382][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2019-03-01 13:23:08.388][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2019-03-01 13:23:08.389][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2019-03-01 13:23:08.390][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2019-03-01 13:23:08.390][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2019-03-01 13:23:09.595][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca20101: startup date [Fri Mar 01 13:23:05 CST 2019]; root of context hierarchy
+[2019-03-01 13:23:09.712][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/test/testDataSource]}" onto public void com.zlc.BootStudying.controller.TestController.testDataSource()
+[2019-03-01 13:23:09.717][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-03-01 13:23:09.717][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-03-01 13:23:09.854][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 13:23:09.854][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 13:23:09.980][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 13:23:12.054][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2019-03-01 13:23:12.071][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916]-- Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[2019-03-01 13:23:12.076][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678]-- Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[2019-03-01 13:23:12.117][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 2147483647
+[2019-03-01 13:23:12.129][main][INFO ][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:267]-- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2019-03-01 13:23:12.184][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8081"]
+[2019-03-01 13:23:12.198][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8081"]
+[2019-03-01 13:23:12.442][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2019-03-01 13:23:12.476][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8081 (http)
+[2019-03-01 13:23:12.485][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 8.947 seconds (JVM running for 10.604)
+[2019-03-01 13:25:00.027][pool-4-thread-1][INFO ][org.apache.kafka.clients.producer.ProducerConfig:165]-- ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+[2019-03-01 13:25:00.076][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 13:25:00.076][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-03-01 15:50:14.704][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:48]-- Starting BootStudyingApplication on ZLC with PID 17676 (E:\2018\code2\BootStudying\target\classes started by zlc_0 in E:\2018\code2\BootStudying)
+[2019-03-01 15:50:14.714][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:593]-- No active profile set, falling back to default profiles: default
+[2019-03-01 15:50:15.322][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2019-03-01 15:50:15.486][main][INFO ][org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext:583]-- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b94089b: startup date [Fri Mar 01 15:50:15 CST 2019]; root of context hierarchy
+[2019-03-01 15:50:16.822][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test1Mapper' and 'com.zlc.BootStudying.dao.test1.Test1Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 15:50:16.822][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test2Mapper' and 'com.zlc.BootStudying.dao.test2.Test2Mapper' mapperInterface. Bean already defined with the same name!
+[2019-03-01 15:50:16.822][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.zlc.BootStudying.dao.*]' package. Please check your configuration.
+[2019-03-01 15:50:17.633][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$64412f37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 15:50:17.689][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$7187828c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-03-01 15:50:18.590][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:89]-- Tomcat initialized with port(s): 8081 (http)
+[2019-03-01 15:50:18.609][main][INFO ][org.apache.catalina.core.StandardService:179]-- Starting service [Tomcat]
+[2019-03-01 15:50:18.610][main][INFO ][org.apache.catalina.core.StandardEngine:179]-- Starting Servlet Engine: Apache Tomcat/8.5.23
+[2019-03-01 15:50:18.763][localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:179]-- Initializing Spring embedded WebApplicationContext
+[2019-03-01 15:50:18.764][localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader:276]-- Root WebApplicationContext: initialization completed in 3278 ms
+[2019-03-01 15:50:19.074][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean:190]-- Mapping servlet: 'dispatcherServlet' to [/]
+[2019-03-01 15:50:19.080][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'characterEncodingFilter' to: [/*]
+[2019-03-01 15:50:19.082][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2019-03-01 15:50:19.083][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2019-03-01 15:50:19.084][localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean:258]-- Mapping filter: 'requestContextFilter' to: [/*]
+[2019-03-01 15:50:20.539][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b94089b: startup date [Fri Mar 01 15:50:15 CST 2019]; root of context hierarchy
+[2019-03-01 15:50:20.697][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/test/testDataSource]}" onto public void com.zlc.BootStudying.controller.TestController.testDataSource()
+[2019-03-01 15:50:20.702][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-03-01 15:50:20.703][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-03-01 15:50:20.823][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 15:50:20.823][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 15:50:20.940][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-03-01 15:50:22.612][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:431]-- Registering beans for JMX exposure on startup
+[2019-03-01 15:50:22.627][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:916]-- Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+[2019-03-01 15:50:22.631][main][INFO ][org.springframework.jmx.export.annotation.AnnotationMBeanExporter:678]-- Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+[2019-03-01 15:50:22.744][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 2147483647
+[2019-03-01 15:50:22.797][main][INFO ][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:267]-- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2019-03-01 15:50:22.836][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Initializing ProtocolHandler ["http-nio-8081"]
+[2019-03-01 15:50:22.924][main][INFO ][org.apache.coyote.http11.Http11NioProtocol:179]-- Starting ProtocolHandler ["http-nio-8081"]
+[2019-03-01 15:50:23.202][main][INFO ][org.apache.tomcat.util.net.NioSelectorPool:179]-- Using a shared selector for servlet write/read
+[2019-03-01 15:50:23.235][main][INFO ][org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer:201]-- Tomcat started on port(s): 8081 (http)
+[2019-03-01 15:50:23.244][main][INFO ][com.zlc.BootStudying.BootStudyingApplication:57]-- Started BootStudyingApplication in 10.072 seconds (JVM running for 12.051)
+[2019-03-01 15:51:00.029][pool-4-thread-1][INFO ][org.apache.kafka.clients.producer.ProducerConfig:165]-- ProducerConfig values: 
+	compression.type = none
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	metadata.fetch.timeout.ms = 60000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	max.block.ms = 60000
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	ssl.protocol = TLS
+	request.timeout.ms = 30000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	acks = 1
+	batch.size = 16384
+	ssl.keystore.location = null
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	retries = 0
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	send.buffer.bytes = 131072
+	linger.ms = 0
+
+[2019-03-01 15:51:00.089][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-03-01 15:51:00.090][pool-4-thread-1][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06

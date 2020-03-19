@@ -1,0 +1,73 @@
+[2019-12-24 09:51:11.513][main][INFO ][com.zlc.BootStudying.BootStudyingApplicationTests:48]-- Starting BootStudyingApplicationTests on ZLC-PC with PID 21308 (started by admin in E:\2018\project2\BootStudying)
+[2019-12-24 09:51:11.518][main][INFO ][com.zlc.BootStudying.BootStudyingApplicationTests:593]-- No active profile set, falling back to default profiles: default
+[2019-12-24 09:51:12.012][main][INFO ][org.springframework.web.context.support.GenericWebApplicationContext:583]-- Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b1cfb87: startup date [Tue Dec 24 09:51:12 CST 2019]; root of context hierarchy
+[2019-12-24 09:51:12.478][background-preinit][INFO ][org.hibernate.validator.internal.util.Version:30]-- HV000001: Hibernate Validator 5.3.6.Final
+[2019-12-24 09:51:13.249][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test1Mapper' and 'com.zlc.BootStudying.dao.test1.Test1Mapper' mapperInterface. Bean already defined with the same name!
+[2019-12-24 09:51:13.250][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:239]-- Skipping MapperFactoryBean with name 'test2Mapper' and 'com.zlc.BootStudying.dao.test2.Test2Mapper' mapperInterface. Bean already defined with the same name!
+[2019-12-24 09:51:13.250][main][WARN ][org.mybatis.spring.mapper.ClassPathMapperScanner:166]-- No MyBatis mapper was found in '[com.zlc.BootStudying.dao.*]' package. Please check your configuration.
+[2019-12-24 09:51:14.393][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7967fd5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-12-24 09:51:14.479][main][INFO ][org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:327]-- Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$86ae50af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2019-12-24 09:51:16.778][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:534]-- Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1b1cfb87: startup date [Tue Dec 24 09:51:12 CST 2019]; root of context hierarchy
+[2019-12-24 09:51:16.926][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/test/testDataSource]}" onto public void com.zlc.BootStudying.controller.TestController.testDataSource()
+[2019-12-24 09:51:16.932][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2019-12-24 09:51:16.933][main][INFO ][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping:543]-- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2019-12-24 09:51:17.055][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-12-24 09:51:17.057][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-12-24 09:51:17.161][main][INFO ][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping:362]-- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2019-12-24 09:51:19.789][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 0
+[2019-12-24 09:51:19.827][main][INFO ][org.apache.kafka.clients.consumer.ConsumerConfig:165]-- ConsumerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	group.id = applog
+	partition.assignment.strategy = [org.apache.kafka.clients.consumer.RangeAssignor]
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	max.partition.fetch.bytes = 1048576
+	bootstrap.servers = [127.0.0.1:9092]
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.keystore.type = JKS
+	ssl.trustmanager.algorithm = PKIX
+	enable.auto.commit = true
+	ssl.key.password = null
+	fetch.max.wait.ms = 500
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	ssl.truststore.password = null
+	session.timeout.ms = 30000
+	metrics.num.samples = 2
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	ssl.protocol = TLS
+	check.crcs = true
+	request.timeout.ms = 40000
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.keystore.location = null
+	heartbeat.interval.ms = 3000
+	auto.commit.interval.ms = 5000
+	receive.buffer.bytes = 32768
+	ssl.cipher.suites = null
+	ssl.truststore.type = JKS
+	security.protocol = PLAINTEXT
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	fetch.min.bytes = 1
+	send.buffer.bytes = 131072
+	auto.offset.reset = latest
+
+[2019-12-24 09:51:19.991][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:82]-- Kafka version : 0.9.0.1
+[2019-12-24 09:51:19.992][main][INFO ][org.apache.kafka.common.utils.AppInfoParser:83]-- Kafka commitId : 23c69d62a0cabf06
+[2019-12-24 09:51:20.011][main][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:343]-- Starting beans in phase 2147483647
+[2019-12-24 09:51:20.041][main][INFO ][org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:267]-- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+[2019-12-24 09:51:20.165][main][INFO ][com.zlc.BootStudying.BootStudyingApplicationTests:57]-- Started BootStudyingApplicationTests in 9.648 seconds (JVM running for 11.353)
+[2019-12-24 09:51:20.458][Thread-2][INFO ][org.springframework.web.context.support.GenericWebApplicationContext:984]-- Closing org.springframework.web.context.support.GenericWebApplicationContext@1b1cfb87: startup date [Tue Dec 24 09:51:12 CST 2019]; root of context hierarchy
+[2019-12-24 09:51:20.463][Thread-2][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:358]-- Stopping beans in phase 2147483647
+[2019-12-24 09:51:20.465][Thread-2][INFO ][org.springframework.context.support.DefaultLifecycleProcessor:358]-- Stopping beans in phase 0
+[2019-12-24 09:51:20.483][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-kafka-consumer-1][INFO ][org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer:495]-- Consumer stopped
