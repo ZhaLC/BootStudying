@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9c1c944-9342-4266-abf3-be688c6333ee" name="Default" comment="通过特性将java中的锁分为6类">
+    <list default="true" id="e9c1c944-9342-4266-abf3-be688c6333ee" name="Default" comment="通过特性将java中的锁分为6类(123理论细化)">
+      <change afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/qa.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/lock.text" beforeDir="false" afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/lock.text" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/lock.text" beforeDir="false" afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/lock.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BootStudying" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -274,7 +278,8 @@
       <workItem from="1577958622150" duration="3328000" />
       <workItem from="1579223524571" duration="945000" />
       <workItem from="1584602661729" duration="5138000" />
-      <workItem from="1584608119427" duration="8828000" />
+      <workItem from="1584608119427" duration="10981000" />
+      <workItem from="1584926855098" duration="5608000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1550046775990</created>
@@ -360,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584607970110</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="通过特性将java中的锁分为6类(123理论细化)">
+      <created>1584695970868</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584695970868</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -421,17 +433,18 @@
     <MESSAGE value="测试通过反射改变不可变对象String的值" />
     <MESSAGE value="新建studying module" />
     <MESSAGE value="通过特性将java中的锁分为6类" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过特性将java中的锁分为6类" />
+    <MESSAGE value="通过特性将java中的锁分为6类(123理论细化)" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过特性将java中的锁分为6类(123理论细化)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584605901628">
+    <state x="686" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584696775969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="686" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584605901628" />
-    <state x="468" y="105" key="CommitChangelistDialog2" timestamp="1584695867558">
+    <state x="686" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584696775969" />
+    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2" timestamp="1584695967689">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="468" y="105" key="CommitChangelistDialog2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584695867558" />
+    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584695967689" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584695861735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -472,18 +485,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="161" key="SettingsEditor/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584608084750" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584607973024">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584695973660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584607973024" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584695973660" />
     <state x="334" y="118" key="new project wizard" timestamp="1584603816982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="118" key="new project wizard/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584603816982" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584606949505">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584955567382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584606949505" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584955567382" />
   </component>
   <component name="masterDetails">
     <states>
