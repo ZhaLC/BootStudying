@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9c1c944-9342-4266-abf3-be688c6333ee" name="Default" comment="temp">
-      <change afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/CountDownLatchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/CountDownLatchDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/CountDownLatch和CyclicBarrier对比.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/CyclicBarrierDemo.java" afterDir="false" />
+    <list default="true" id="e9c1c944-9342-4266-abf3-be688c6333ee" name="Default" comment="CountDownLatch和CyclicBarrier理解和对比">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/CountDownLatch和CyclicBarrier对比.txt" beforeDir="false" afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/CountDownLatch和CyclicBarrier对比.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +339,8 @@
       <workItem from="1584602661729" duration="5138000" />
       <workItem from="1584608119427" duration="10981000" />
       <workItem from="1584926855098" duration="12480000" />
-      <workItem from="1585106924888" duration="13027000" />
+      <workItem from="1585106924888" duration="14980000" />
+      <workItem from="1585531368896" duration="2245000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1550046775990</created>
@@ -456,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585216995200</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="CountDownLatch和CyclicBarrier理解和对比">
+      <created>1585302863735</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585302863735</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -521,7 +526,8 @@
     <MESSAGE value="部分锁相关问题及答案" />
     <MESSAGE value="自旋锁demo" />
     <MESSAGE value="temp" />
-    <option name="LAST_COMMIT_MESSAGE" value="temp" />
+    <MESSAGE value="CountDownLatch和CyclicBarrier理解和对比" />
+    <option name="LAST_COMMIT_MESSAGE" value="CountDownLatch和CyclicBarrier理解和对比" />
   </component>
   <component name="WindowStateProjectService">
     <state x="686" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584696775969">
@@ -532,30 +538,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585300768049" />
-    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2" timestamp="1585216993227">
+    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2" timestamp="1585302861631">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585216993227" />
+    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585302861631" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584695861735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584695861735" />
-    <state width="1877" height="84" key="GridCell.Tab.0.bottom" timestamp="1585301394485">
+    <state width="1877" height="138" key="GridCell.Tab.0.bottom" timestamp="1585302935538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="84" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585301394485" />
-    <state width="1877" height="84" key="GridCell.Tab.0.center" timestamp="1585301394484">
+    <state width="1877" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585302935538" />
+    <state width="1877" height="138" key="GridCell.Tab.0.center" timestamp="1585302935538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="84" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585301394484" />
-    <state width="1877" height="84" key="GridCell.Tab.0.left" timestamp="1585301394484">
+    <state width="1877" height="138" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585302935538" />
+    <state width="1877" height="138" key="GridCell.Tab.0.left" timestamp="1585302935537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="84" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585301394484" />
-    <state width="1877" height="84" key="GridCell.Tab.0.right" timestamp="1585301394485">
+    <state width="1877" height="138" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585302935537" />
+    <state width="1877" height="138" key="GridCell.Tab.0.right" timestamp="1585302935538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="84" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585301394485" />
+    <state width="1877" height="138" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585302935538" />
     <state width="1877" height="194" key="GridCell.Tab.1.bottom" timestamp="1584607863138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -572,14 +578,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="194" key="GridCell.Tab.1.right/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584607863138" />
+    <state x="725" y="230" key="RollbackChangesDialog" timestamp="1585536809164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="230" key="RollbackChangesDialog/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585536809164" />
     <state x="453" y="161" key="SettingsEditor" timestamp="1585210477510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="453" y="161" key="SettingsEditor/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585210477510" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585216997593">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585302920633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585216997593" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585302920633" />
     <state x="334" y="118" key="new project wizard" timestamp="1584603816982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

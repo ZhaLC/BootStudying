@@ -9,3 +9,15 @@
             英雄联盟, 主线程为控制游戏开始的线程, 其他线程是5个玩家, 5个玩家都准备好, 主线程游戏开始;
         CyclicBarrier:
             5个人翻越3道障碍物, 要求所有人翻越当前障碍物后才能翻越下一个障碍物, 所有人都翻越3道后, 主线程可能早就结束了;
+
+
+CyclicBarrier和CountDownLatch有什么区别
+
+    1) 从使用场景上来说CyclicBarrier适用于一组线程同时执行,而CountDownLatch执行的时候是一个个线程执行的。
+
+    2) 从功能上来说CyclicBarrier可以实现计数的复用而CountDownLatch不能。CyclicBarrier可以实现一组线程同一时间同时执行而CountDownLatch不能,
+    CountDownLatch只能实现基于线程A等待若干线程执行完之后,它才能执行。
+
+    3) 从实现方式来说CountDownLatch是基于AQS的共享锁模式实现,CyclicBarrier是基于ReentrantLock和Condition实现，ReentrantLock的lock方法
+    又是基于AQS的独占锁模式实现,Condition也是用的AQS中的ConditionObject来实现。
+
