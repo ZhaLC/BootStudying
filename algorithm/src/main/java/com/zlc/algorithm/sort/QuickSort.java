@@ -1,6 +1,9 @@
 package com.zlc.algorithm.sort;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
 
 /**
  * @author : ZLC
@@ -118,20 +121,50 @@ public class QuickSort {
         return mark;
     }
 
-
-
-
+    //快排 栈实现 使用的双边、指针交换法
+    public static void quickSortWithStack(int[] arr, int startIndex, int endIndex) {
+        //用一个集合栈来代替递归的函数栈
+        Stack<Map<String, Integer>> stack = new Stack<>();
+        //整个数列的起止下标 以哈希的形式入栈
+        Map rootParam = new HashMap();
+        rootParam.put("startIndex", startIndex);
+        rootParam.put("endIndex", endIndex);
+        stack.push(rootParam);
+        //循环结束条件 栈为空时结束
+        while(!stack.isEmpty()){
+            //栈顶元素出栈 得到起止下标
+            Map<String, Integer> param = stack.pop();
+            //得到基准元素位置
+            int pivot = partition2(arr, param.get("startIndex"), param.get("endIndex"));
+            //根据基准元素分成两部分 每一部分的起止下标入栈
+            if(param.get("startIndex") < pivot - 1){
+                Map<String, Integer> leftParam = new HashMap<>();
+                leftParam.put("startIndex", param.get("startIndex"));
+                leftParam.put("endIndex", pivot - 1);
+                stack.push(leftParam);
+            }
+            if(param.get("endIndex") > pivot + 1){
+                Map<String, Integer> leftParam = new HashMap<>();
+                leftParam.put("startIndex", pivot + 1);
+                leftParam.put("endIndex", param.get("endIndex"));
+                stack.push(leftParam);
+            }
+        }
+    }
 
     public static void main(String[] args) {
         int[] arr = {4,7,6,5,3,2,8,1};
         int[] arr2 = {4,7,6,5,3,2,8,1};
         int[] arr3 = {4,7,6,5,3,2,8,1};
+        int[] arr4 = {4,7,6,5,3,2,8,1};
         quickSort1(arr,0,arr.length-1);
         System.out.println(Arrays.toString(arr));
         quickSort2(arr2,0,arr.length-1);
         System.out.println(Arrays.toString(arr2));
         quickSort3(arr3,0,arr.length-1);
         System.out.println(Arrays.toString(arr3));
+        quickSortWithStack(arr4,0,arr.length-1);
+        System.out.println(Arrays.toString(arr4));
     }
 
 }
