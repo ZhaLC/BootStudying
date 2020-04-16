@@ -1,0 +1,35 @@
+server:
+  port: 8090
+
+######### sharding-jdbc配置 ########
+sharding:
+  jdbc:
+    datasource:
+      names: db0,db1
+      ds0:
+        type: com.alibaba.druid.pool.DataSource
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/center001?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
+        username: root
+        password: 123456
+        maxPoolSize: 20
+      ds1:
+        type: com.alibaba.druid.pool.DataSource
+        riverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/center002?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
+        username: root
+        password: 123456
+        maxPoolSize: 20
+    config:
+      props:
+        sql:
+          show: true
+      tables:
+        voice: #voice表
+          key-generator-column-name: id #主键
+          #actual-data-node: ds${0..1}.voice_20200${1..9},ds${0..1}.voice_20201${0..2}
+          actual-data-node: ds${0..1}.voice_20200${[4,5]}
+          table-strategy:
+            standard:
+              sharding-column: create_time
+              precise-algorithm-class-name: com.zlc.shardingjdbcdemo.shardingConfig.MyPreciseShardingAlgorithm
