@@ -1,5 +1,8 @@
 package com.zlc.algorithm.leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author : ZLC
  * @create : 2020-05-16 11:00
@@ -7,7 +10,7 @@ package com.zlc.algorithm.leetcode;
  **/
 public class Q560_SubArraySum {
 
-    //暴力解法 O(n²) - O(1)
+    //暴力解法 O(n²) / O(1)
     public int subarraySum(int[] nums, int k) {
         int count = 0;
         for(int i = 0; i < nums.length; i++){
@@ -22,10 +25,10 @@ public class Q560_SubArraySum {
         return count;
     }
 
-    //前缀和 O(n²) - O(n)
+    //前缀和 O(n²) / O(n)
     public int subarraySum2(int[] nums, int k) {
         int len = nums.length;
-        //构建前缀和数组
+        //构建前缀和数组 这里构建的前缀和是 preNums[i+1] = preNums[i] + nums[i]
         int[] preNums = new int[len+1];
         preNums[0] = 0;
         for(int i = 0; i < len; i++){
@@ -41,6 +44,22 @@ public class Q560_SubArraySum {
             }
         }
         return count;
-
+    }
+    //前缀和 + 哈希表 O(n) / O(n)
+    // https://leetcode-cn.com/problems/subarray-sum-equals-k/solution/dai-ni-da-tong-qian-zhui-he-cong-zui-ben-fang-fa-y/
+    // https://leetcode-cn.com/problems/subarray-sum-equals-k/solution/bao-li-jie-fa-qian-zhui-he-qian-zhui-he-you-hua-ja/
+    public int subarraySum3(int[] nums, int k) {
+        Map<Integer, Integer> preNumFreq = new HashMap<>();
+        preNumFreq.put(0,1);
+        int count = 0;
+        int preSum = 0;
+        for(int num : nums){
+            preSum += num;
+            if(preNumFreq.containsKey(preSum - k)){
+                count += preNumFreq.get(preSum - k);
+            }
+            preNumFreq.put(preSum, preNumFreq.getOrDefault(preSum,0)+1);
+        }
+        return count;
     }
 }
