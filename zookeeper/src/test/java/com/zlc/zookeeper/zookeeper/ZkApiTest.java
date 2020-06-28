@@ -1,13 +1,14 @@
 package com.zlc.zookeeper.zookeeper;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+//import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 
-@RunWith(SpringRunner.class)
+//为毛注释掉zookeeper依赖这个会找不到啊..
+//@RunWith(SpringRunner.class)
 @SpringBootTest
 class ZkApiTest {
 
