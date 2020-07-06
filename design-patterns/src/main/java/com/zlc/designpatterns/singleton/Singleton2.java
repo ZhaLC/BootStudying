@@ -9,7 +9,7 @@ public class Singleton2 {
 
     private static Singleton2 singleton2;
 
-    public Singleton2() {
+    private Singleton2() {
     }
 
     static{
