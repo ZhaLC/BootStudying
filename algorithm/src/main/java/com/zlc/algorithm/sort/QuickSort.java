@@ -8,7 +8,7 @@ import java.util.Stack;
 /**
  * @author : ZLC
  * @create : 2020-04-10 15:06
- * @desc : 快排O(nlogn) 递归实现(双向、单向)、栈实现、 不稳定排序
+ * @desc : 快排O(nlogn) 最坏O(n²) 递归实现(双向、单向)、栈实现、 不稳定排序
  **/
 public class QuickSort {
 
@@ -165,6 +165,135 @@ public class QuickSort {
         System.out.println(Arrays.toString(arr3));
         quickSortWithStack(arr4,0,arr.length-1);
         System.out.println(Arrays.toString(arr4));
+    }
+
+
+
+    static class QuickSortReview{
+        /*挖坑*/
+        public static void quickSort(int[] arr, int startIndex, int endIndex){
+            if(startIndex >= endIndex){
+                return;
+            }
+            int pivot = partition(arr, startIndex, endIndex);
+            quickSort(arr, startIndex, pivot-1);
+            quickSort(arr, pivot+1, endIndex);
+        }
+        public static int partition(int[] arr, int startIndex, int endIndex){
+            int pivot = arr[startIndex];
+            int index = startIndex;
+            while(startIndex <= endIndex){
+                while(startIndex <= endIndex){
+                    if(arr[endIndex] < pivot){
+                        arr[startIndex] = arr[endIndex];
+                        startIndex++;
+                        index = endIndex;
+                        break;
+                    }
+                    endIndex--;
+                }
+                while(startIndex <= endIndex){
+                    if(arr[startIndex] > pivot){
+                        arr[endIndex] = arr[startIndex];
+                        endIndex--;
+                        index = startIndex;
+                        break;
+                    }
+                    startIndex++;
+                }
+            }
+            arr[index] = pivot;
+            return index;
+        }
+
+        /*双边指针*/
+        public static void quickSort2(int[] arr, int startIndex, int endIndex){
+            if(startIndex >= endIndex){
+                return;
+            }
+            int pivot = partition2(arr, startIndex, endIndex);
+            quickSort2(arr, startIndex, pivot-1);
+            quickSort2(arr, pivot+1, endIndex);
+        }
+        public static int partition2(int[] arr, int startIndex, int endIndex){
+            int pivot = arr[startIndex];
+            int index = startIndex;
+            while(startIndex != endIndex){
+                while(endIndex > startIndex && arr[endIndex] >= pivot){
+                    endIndex--;
+                }
+                while(endIndex > startIndex && arr[startIndex] <= pivot){
+                    startIndex++;
+                }
+                if(startIndex < endIndex){
+                    int temp = arr[startIndex];
+                    arr[startIndex] = arr[endIndex];
+                    arr[endIndex] = temp;
+                }
+            }
+            int temp = arr[startIndex];
+            arr[startIndex] = pivot;
+            arr[index] = temp;
+            return startIndex;
+        }
+
+        /*单边指针*/
+        public static void quickSort3(int[] arr, int startIndex, int endIndex){
+            if(startIndex >= endIndex){
+                return;
+            }
+            int pivot = partition3(arr, startIndex, endIndex);
+            quickSort3(arr, startIndex, pivot-1);
+            quickSort3(arr, pivot+1, endIndex);
+        }
+        public static int partition3(int[] arr, int startIndex, int endIndex){
+            int pivot = arr[startIndex];
+            int mark = startIndex;
+            for (int i = startIndex+1; i <= endIndex; i++) {
+                if(arr[i] < pivot){
+                    mark++;
+                    int temp = arr[mark];
+                    arr[mark] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+            int temp = arr[mark];
+            arr[mark] = pivot;
+            arr[startIndex] = temp;
+            return mark;
+        }
+
+        public static void quickSortWithStack(int[] arr, int startIndex, int endIndex){
+            Stack<Map<String, Integer>> stack = new Stack<>();
+            Map<String, Integer> map = new HashMap();
+            map.put("start", startIndex);
+            map.put("end", endIndex);
+            stack.push(map);
+            while(!stack.isEmpty()){
+                Map<String, Integer> param = stack.pop();
+                int pivot = partition2(arr, param.get("start"), param.get("end"));
+                if(param.get("start") < pivot - 1){
+                    Map<String, Integer> leftParam = new HashMap<>();
+                    leftParam.put("start", startIndex);
+                    leftParam.put("end", pivot-1);
+                    stack.push(leftParam);
+                }
+                if(param.get("end") > pivot+1){
+                    Map<String, Integer> rightParam = new HashMap<>();
+                    rightParam.put("start", pivot + 1);
+                    rightParam.put("end", endIndex);
+                    stack.push(rightParam);
+                }
+            }
+        }
+
+
+
+        public static void main(String[] args) {
+            int[] arr = {4,7,6,5,3,2,8,1};
+            quickSortWithStack(arr,0,arr.length-1);
+            System.out.println(Arrays.toString(arr));
+        }
     }
 
 }
