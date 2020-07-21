@@ -203,4 +203,92 @@ public class BubbleSortTest {
         sort5(arr5);
     }
 
+    static class BubbleReview{
+        /*基础写法*/
+        public static void bubbleSort(int[] arr){
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr.length-i-1; j++) {
+                    if(arr[j] > arr[j+1]){
+//                        int temp = arr[j];
+//                        arr[j] = arr[j+1];
+//                        arr[j+1] = temp;
+                        /**
+                         * 一个数按位异或自己等于0 a^a=0;
+                         * 一个数按位异或0等于自己 a^0=a;
+                         */
+                        arr[j] = arr[j] ^ arr[j+1];
+                        arr[j+1] = arr[j] ^ arr[j+1];
+                        arr[j] = arr[j] ^ arr[j+1];
+                    }
+                }
+            }
+            print(arr);
+        }
+        /*加入有序标识*/
+        public static void bubbleSort2(int[] arr){
+            for (int i = 0; i < arr.length; i++) {
+                boolean isOrdered = true;
+                for (int j = 0; j < arr.length-i-1; j++) {
+                    if(arr[j] > arr[j+1]){
+//                        int temp = arr[j];
+//                        arr[j] = arr[j+1];
+//                        arr[j+1] = temp;
+                        /**
+                         * 一个数按位异或自己等于0 a^a=0;
+                         * 一个数按位异或0等于自己 a^0=a;
+                         */
+                        arr[j] = arr[j] ^ arr[j+1];
+                        arr[j+1] = arr[j] ^ arr[j+1];
+                        arr[j] = arr[j] ^ arr[j+1];
+                        isOrdered = false;
+                    }
+                }
+                if(isOrdered){
+                    break;
+                }
+
+            }
+            print(arr);
+        }
+        /*加入有序区界定*/
+        public static void bubbleSort3(int[] arr){
+            int lastExchange = 0;
+            int sortBorder = arr.length-1;
+            for (int i = 0; i < arr.length; i++) {
+                boolean isOrdered = true;
+                for (int j = 0; j < sortBorder; j++) {
+                    if(arr[j] > arr[j+1]){
+//                        int temp = arr[j];
+//                        arr[j] = arr[j+1];
+//                        arr[j+1] = temp;
+                        /**
+                         * 一个数按位异或自己等于0 a^a=0;
+                         * 一个数按位异或0等于自己 a^0=a;
+                         */
+                        arr[j] = arr[j] ^ arr[j+1];
+                        arr[j+1] = arr[j] ^ arr[j+1];
+                        arr[j] = arr[j] ^ arr[j+1];
+                        isOrdered = false;
+                        lastExchange = j;
+                    }
+                }
+                sortBorder = lastExchange;
+                if(isOrdered){
+                    break;
+                }
+            }
+            print(arr);
+        }
+
+
+
+
+        public static void main(String[] args) {
+            int[] arr1 = {1,2,4,9,6,5,8,7,3};
+            bubbleSort3(arr1);
+        }
+
+
+    }
+
 }
