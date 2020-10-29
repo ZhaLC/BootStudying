@@ -23,7 +23,8 @@
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.5.4</version>
+            <!--之前用1.5.4报错, 启动不起来Spring: error at ::0 can't find referenced pointcut myPointcut-->
+            <version>1.9.6</version>
         </dependency>
 
         <dependency>
@@ -41,6 +42,11 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
