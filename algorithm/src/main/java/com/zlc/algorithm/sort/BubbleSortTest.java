@@ -2,6 +2,16 @@ package com.zlc.algorithm.sort;
 
 public class BubbleSortTest {
 
+    public static void sort(int[] arr){
+
+        print(arr);
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,4,9,6,5,8,7,3};
+        sort(arr);
+    }
+
     /**
      * 最简单最原始
      * @param arr
@@ -185,7 +195,7 @@ public class BubbleSortTest {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         int[] arr1 = {1,2,4,9,6,5,8,7,3};
         int[] arr2 = {5,8,6,3,9,2,1,7};
         int[] arr3 = {3,4,2,1,5,6,7,8};
@@ -201,7 +211,7 @@ public class BubbleSortTest {
         sort4(arr4);
         System.out.println("=====5========");
         sort5(arr5);
-    }
+    }*/
 
     static class BubbleReview{
         /*基础写法*/
