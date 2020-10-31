@@ -73,12 +73,18 @@ public class QuickSort {
         int left = startIndex;
         int right = endIndex;
         while(right != left){
+            // 注意: 因为上面pivot选择的startIndex处的元素, 所以下面顺序必须是先处理right指针, 再处理left指针;
+            // 理解是先出来left指针可能会多换出去一步, 最后pivot和重合点交换的时候不对了
+            // pivot如果选择endIndex处的元素, 则先出来left, 后处理right可以
             while(right > left && arr[right] >= pivot){
                 right--;
             }
             while(right > left && arr[left] <= pivot){
                 left++;
             }
+//            while(right > left && arr[right] >= pivot){
+//                right--;
+//            }
             if(left < right){
                 int temp = arr[left];
                 arr[left] = arr[right];
@@ -296,4 +302,46 @@ public class QuickSort {
         }
     }
 
+    static class QuickSortMd{
+        public static void quickSort(int[] arr, int startIndex, int endIndex){
+            if(startIndex >= endIndex){
+                return;
+            }
+            int pivot = partition(arr, startIndex, endIndex);
+            quickSort(arr, 0, pivot - 1);
+            quickSort(arr, pivot + 1, endIndex);
+        }
+        public static int partition(int[] arr, int startIndex, int endIndex){
+            int pivot = arr[endIndex];
+            int left = startIndex;
+            int right = endIndex;
+            while(left != right){
+//                while(left < right && arr[right] >= pivot){
+//                    right--;
+//                }
+                while(left < right && arr[left] <= pivot){
+                    left++;
+                }
+                while(left < right && arr[right] >= pivot){
+                    right--;
+                }
+                if(left < right){
+                    int temp = arr[left];
+                    arr[left] = arr[right];
+                    arr[right] = temp;
+                }
+            }
+            int temp = arr[left];
+            arr[left] = arr[endIndex];
+            arr[endIndex] = temp;
+            return left;
+        }
+
+        public static void main(String[] args) {
+            int[] arr = {4,7,6,5,3,2,8,1};
+            //int[] arr = {1,2};
+            quickSort(arr,0,arr.length-1);
+            System.out.println(Arrays.toString(arr));
+        }
+    }
 }
