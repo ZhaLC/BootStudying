@@ -3,7 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BootStudying.iml" filepath="$PROJECT_DIR$/BootStudying.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Java.iml" filepath="$PROJECT_DIR$/Java/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns/design-patterns.iml" filepath="$PROJECT_DIR$/design-patterns/design-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharding-jdbc-demo/sharding-jdbc-demo.iml" filepath="$PROJECT_DIR$/sharding-jdbc-demo/sharding-jdbc-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-data-redis/springboot-data-redis.iml" filepath="$PROJECT_DIR$/springboot-data-redis/springboot-data-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying/studying.iml" filepath="$PROJECT_DIR$/studying/studying.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper/zookeeper.iml" filepath="$PROJECT_DIR$/zookeeper/zookeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper2/zookeeper2.iml" filepath="$PROJECT_DIR$/zookeeper2/zookeeper2.iml" />
     </modules>
   </component>
 </project>

@@ -5,10 +5,16 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/studying/pom.xml" />
+        <option value="$PROJECT_DIR$/algorithm/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-data-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/design-patterns/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-jdbc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper2/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

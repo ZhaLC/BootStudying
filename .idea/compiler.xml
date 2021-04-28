@@ -2,22 +2,40 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="sharding-jdbc-demo" />
+        <module name="zookeeper" />
+        <module name="springboot-data-redis" />
+        <module name="algorithm" />
         <module name="BootStudying" />
         <module name="studying" />
+        <module name="zookeeper2" />
+        <module name="design-patterns" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="algorithm" target="1.8" />
       <module name="BootStudying" target="1.8" />
+      <module name="design-patterns" target="1.8" />
+      <module name="sharding-jdbc-demo" target="1.8" />
+      <module name="springboot-data-redis" target="1.8" />
       <module name="studying" target="1.8" />
+      <module name="zookeeper" target="1.8" />
+      <module name="zookeeper2" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="algorithm" options="-parameters" />
+      <module name="design-patterns" options="-parameters" />
+      <module name="sharding-jdbc-demo" options="-parameters" />
+      <module name="springboot-data-redis" options="-parameters" />
       <module name="studying" options="-parameters" />
+      <module name="zookeeper" options="-parameters" />
     </option>
   </component>
 </project>

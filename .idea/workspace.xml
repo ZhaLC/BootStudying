@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9c1c944-9342-4266-abf3-be688c6333ee" name="Default" comment="CountDownLatch和CyclicBarrier理解和对比(补充)">
-      <change afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/Semaphore.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/studying/src/main/java/com/zlc/studying/lock/SemaphoreDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/main/java/com/zero/springbootdataredis/SpringbootDataRedisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/main/java/com/zero/springbootdataredis/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/main/java/com/zero/springbootdataredis/po/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/main/java/com/zero/springbootdataredis/service/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/main/java/com/zero/springbootdataredis/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/test/java/com/zero/springbootdataredis/SpringbootDataRedisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-data-redis/src/test/java/com/zero/springbootdataredis/service/TestServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sharding-jdbc-demo/sharding-jdbc-demo.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +52,9 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>kafka</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -137,65 +151,35 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579228745154" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Java" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.zero.springbootdataredis.service" />
+      <recent name="com.zero.springbootdataredis.config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\2018\code2\BootStudying\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\2018\project2\BootStudying\src\main\java\com\zlc\BootStudying" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SemaphoreDemo">
+  <component name="RunManager" selected="JUnit.TestServiceTest.test1">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zlc.studying.lock.CountDownLatchDemo" />
-      <module name="studying" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zlc.studying.lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CountDownLatchDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zlc.studying.lock.CountDownLatchDemo2" />
-      <module name="studying" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zlc.studying.lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CyclicBarrierDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zlc.studying.lock.CyclicBarrierDemo" />
-      <module name="studying" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zlc.studying.lock.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,22 +198,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zlc.studying.algorithm.Test" />
-      <module name="studying" />
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zlc.studying.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration name="RedisConfigTest.testCustomRedisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-data-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zero.springbootdataredis.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zero.springbootdataredis.config" />
+      <option name="MAIN_CLASS_NAME" value="com.zero.springbootdataredis.config.RedisConfigTest" />
+      <option name="METHOD_NAME" value="testCustomRedisTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDataRedisApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-data-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zero.springbootdataredis.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zero.springbootdataredis" />
+      <option name="MAIN_CLASS_NAME" value="com.zero.springbootdataredis.SpringbootDataRedisApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServiceTest.query" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-data-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zero.springbootdataredis.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zero.springbootdataredis.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zero.springbootdataredis.service.TestServiceTest" />
+      <option name="METHOD_NAME" value="query" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServiceTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-data-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zero.springbootdataredis.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zero.springbootdataredis.service" />
+      <option name="MAIN_CLASS_NAME" value="com.zero.springbootdataredis.service.TestServiceTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -241,6 +279,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AlgorithmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="algorithm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zlc.algorithm.AlgorithmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BootStudyingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="BootStudying" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zlc.BootStudying.BootStudyingApplication" />
@@ -248,9 +293,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DesignPatternsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="design-patterns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zlc.designpatterns.DesignPatternsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShardingJdbcDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sharding-jdbc-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zlc.shardingjdbcdemo.ShardingJdbcDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDataRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-data-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zero.springbootdataredis.SpringbootDataRedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudyingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="studying" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zlc.studying.StudyingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZookeeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zookeeper" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zlc.zookeeper.ZookeeperApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -275,11 +348,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServiceTest.test1" />
+        <item itemvalue="JUnit.TestServiceTest.query" />
+        <item itemvalue="JUnit.RedisConfigTest.testCustomRedisTemplate" />
+        <item itemvalue="JUnit.SpringbootDataRedisApplicationTests.contextLoads" />
         <item itemvalue="Application.SemaphoreDemo" />
-        <item itemvalue="Application.CyclicBarrierDemo" />
-        <item itemvalue="Application.CountDownLatchDemo2" />
-        <item itemvalue="Application.CountDownLatchDemo" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -294,6 +367,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\zlc_0\AppData\Roaming\Subversion</configuration>
@@ -342,6 +416,9 @@
       <workItem from="1584926855098" duration="12480000" />
       <workItem from="1585106924888" duration="14980000" />
       <workItem from="1585531368896" duration="7656000" />
+      <workItem from="1619575463034" duration="12080000" />
+      <workItem from="1619595968855" duration="610000" />
+      <workItem from="1619596591372" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1550046775990</created>
@@ -539,182 +616,61 @@
     <option name="LAST_COMMIT_MESSAGE" value="CountDownLatch和CyclicBarrier理解和对比(补充)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584696775969">
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1619594714255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="686" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584696775969" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585537581854">
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619594714255" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1619594414442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585537581854" />
-    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2" timestamp="1585536907418">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619594414442" />
+    <state x="740" y="206" key="FileChooserDialogImpl" timestamp="1619576555788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="468" y="105" width="1249" height="830" key="CommitChangelistDialog2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585536907418" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584695861735">
+    <state x="740" y="206" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619576555788" />
+    <state width="1877" height="386" key="GridCell.Tab.0.bottom" timestamp="1619597293260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584695861735" />
-    <state width="1877" height="412" key="GridCell.Tab.0.bottom" timestamp="1585553879368">
+    <state width="1877" height="386" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619597293260" />
+    <state width="1877" height="386" key="GridCell.Tab.0.center" timestamp="1619597293259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585553879368" />
-    <state width="1877" height="412" key="GridCell.Tab.0.center" timestamp="1585553879368">
+    <state width="1877" height="386" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619597293259" />
+    <state width="1877" height="386" key="GridCell.Tab.0.left" timestamp="1619597293259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.center/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585553879368" />
-    <state width="1877" height="412" key="GridCell.Tab.0.left" timestamp="1585553879367">
+    <state width="1877" height="386" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619597293259" />
+    <state width="1877" height="386" key="GridCell.Tab.0.right" timestamp="1619597293259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.left/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585553879367" />
-    <state width="1877" height="412" key="GridCell.Tab.0.right" timestamp="1585553879368">
+    <state width="1877" height="386" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619597293259" />
+    <state x="583" y="215" key="NewModule_or_Project.wizard" timestamp="1619575511313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="412" key="GridCell.Tab.0.right/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585553879368" />
-    <state width="1877" height="194" key="GridCell.Tab.1.bottom" timestamp="1584607863138">
+    <state x="583" y="215" key="NewModule_or_Project.wizard/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619575511313" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1619575514856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584607863138" />
-    <state width="1877" height="194" key="GridCell.Tab.1.center" timestamp="1584607863138">
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619575514856" />
+    <state x="742" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619594409682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.1.center/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584607863138" />
-    <state width="1877" height="194" key="GridCell.Tab.1.left" timestamp="1584607863138">
+    <state x="742" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619594409682" />
+    <state x="689" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1619596337717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.1.left/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584607863138" />
-    <state width="1877" height="194" key="GridCell.Tab.1.right" timestamp="1584607863138">
+    <state x="689" y="237" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619596337717" />
+    <state x="334" y="220" key="new project wizard" timestamp="1619575585552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="194" key="GridCell.Tab.1.right/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584607863138" />
-    <state x="725" y="230" key="RollbackChangesDialog" timestamp="1585536809164">
+    <state x="334" y="220" key="new project wizard/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619575585552" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1619592565557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="725" y="230" key="RollbackChangesDialog/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585536809164" />
-    <state x="453" y="161" key="SettingsEditor" timestamp="1585210477510">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619592565557" />
+    <state x="623" y="225" width="1103" height="678" key="search.everywhere.popup" timestamp="1619591029270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="453" y="161" key="SettingsEditor/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585210477510" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585536911542">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1585536911542" />
-    <state x="334" y="118" key="new project wizard" timestamp="1584603816982">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="334" y="118" key="new project wizard/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584603816982" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584955567382">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1366.60.1366.728@0.0.1920.1040" timestamp="1584955567382" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>BootStudying</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: org.springframework.kafka:spring-kafka:1.0.6.RELEASE</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="623" y="225" width="1103" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1619591029270" />
   </component>
 </project>
